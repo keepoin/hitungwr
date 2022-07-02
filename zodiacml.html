@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apakah kamu penasaran, berapa pertandingan yang harus kamu menangkan untuk mencapai target winrate kamu?">
+    <meta name="keywords" content="cara menghitung wr, situs penghitung wr, mobile legends, hitung wr, website penghitung wr, penghitung wr">
+    <meta property="og:description" content="Apakah kamu penasaran, berapa match yang harus kamu menangkan untuk mencapai target winrate kamu?" />
+    <!-- <script type='text/javascript' src='//pl16595215.effectivecpmgate.com/e0/25/bf/e025bf22bb956752813c0a3966661849.js'></script> -->
+    <title>Penghitung WR Mobile Legends</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="container pb-4">
+        <div class="row justify-content-center">
+            <div class="bg-dark mb-4 py-1 text-white text-center welcomeMsg py-sm-2" id="welcomeMsg">
+                <p class="animation mb-0 text-truncate">SELAMAT DATANG</p>
+            </div>
+            <div class="col-lg-6 col-md-9 col-sm-9">
+                <div class="text-center mb-3 d-flex flex-column align-items-center">
+                </div>
+              <div class="card mb-3">
+
+<h3 class="text-black mt-3 mb-1">KALKULATOR ZODIAC</h5>
+<div class="col-sm-7 col-12">
+  <p>Berfungsi untuk mengetahui total maksimal diamond yang kamu butuhkan untuk mendapatkan skin ZODIAC.</p>
+  <br>
+  <form method="post" target="">
+    <div class="row">
+      <h6 color="white">GESER SESUAI POINT ZODIAC ANDA</h6>
+      <div class="col-12 col-lg-8 mb-5">
+        <div class="slidecontainer">
+          <span>
+            <span color='white'>STAR POINT ANDA : </span>
+          </span> <span id="f" style="font-weight:bold;color:#30cdf8"></span><br />
+          <input type="range" min="0" max="99" value="50" name="sld6" class="slider" id="myRange" onchange="show_value2(this.value)">
+          <br>
+          <span color='white'>MEMBUTUHKAN MAKSIMAL : </span><span id="slider_value2" style="color:white;font-weight:bold;"></span>
+          <i class="fas fa-gem" style="color: #00c8c8"></i>
+          <span color='white'> DIAMOND</span>
+        </div>
+        <div>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+<script>
+function show_value2(x) {
+
+            if (x < 90) {
+                yz = Math.ceil((2000 - x * 20) * 850 / 1000);
+            }
+
+            if (x > 89) {
+                yz = Math.ceil((2000 - x * 20));
+            }
+
+            document.getElementById("slider_value2").innerHTML = yz;
+
+        }
+</script>
+  <script>
+  var slideCol = document.getElementById("myRange");
+  var y = document.getElementById("f");
+  y.innerHTML = slideCol.value;
+
+  slideCol.oninput = function() {
+    y.innerHTML = this.value;
+  }
+</script>
+              
+                <hr>
+                <a href="index.html" class="text-center d-block mb-2 text-warning">KEMBALI ?</a>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206846692-3"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+
+</html>
